@@ -1,0 +1,42 @@
+.Header {
+   padding: 1rem;
+   height: 80vh;
+   text-align: center;
+   background-image: linear-gradient(
+         to right,
+         rgba(0, 0, 0, 0.466),
+         rgba(0, 0, 0, 0.39)
+      ),
+      url(../../assets/imgs/header-bg-lg.jpg);
+
+   &__text {
+      max-width: 120rem;
+      height: 80%;
+      margin: 0 auto;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__primary {
+      font-size: 4rem;
+      color: var(--white);
+      margin-bottom: 2rem;
+
+      & span {
+         color: var(--primary);
+         display: block;
+      }
+   }
+
+   &__secondary {
+      color: var(--white);
+      font-size: 2rem;
+      margin-bottom: 2rem;
+
+      & span {
+         display: block;
+      }
+   }
+}

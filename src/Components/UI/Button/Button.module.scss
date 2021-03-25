@@ -1,0 +1,25 @@
+.Button {
+   display: flex;
+   align-items: center;
+   padding: 1rem 4rem;
+   color: var(--white);
+   background-color: var(--primary);
+   border-radius: 2.5rem;
+   align-self: flex-start;
+   font-family: inherit;
+   font-size: 2rem;
+   cursor: pointer;
+   transition: all 0.2s;
+
+   & svg {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--white);
+      margin-left: 2rem;
+      transition: all 0.2s;
+   }
+
+   &:hover {
+      background-color: var(--grey-light);
+   }
+}

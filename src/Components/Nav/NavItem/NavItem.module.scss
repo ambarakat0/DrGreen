@@ -1,0 +1,15 @@
+.NavItem {
+   font-size: 2rem;
+   transition: all 0.2s;
+   & a {
+      color: var(--white);
+   }
+
+   &:not(:last-child) {
+      margin-right: 4rem;
+   }
+
+   & a:hover {
+      color: var(--primary);
+   }
+}

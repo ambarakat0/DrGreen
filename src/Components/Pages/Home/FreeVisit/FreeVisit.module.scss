@@ -1,0 +1,42 @@
+.FreeSection {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   padding: 2rem;
+
+   &__img {
+      overflow: hidden;
+      & img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__textprimary {
+         font-size: 3rem;
+         color: var(--grey-dark);
+         margin-bottom: 2rem;
+         & span {
+            color: var(--primary);
+         }
+      }
+      &__textsecondary {
+         font-size: 2rem;
+         color: var(--grey-dark);
+         margin-bottom: 2rem;
+         & span {
+            display: block;
+         }
+      }
+      & button {
+         align-self: center;
+      }
+   }
+}
