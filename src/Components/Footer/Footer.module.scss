@@ -1,0 +1,47 @@
+.Footer {
+   background-color: var(--grey-dark);
+   padding: 5rem 2rem;
+   display: grid;
+
+   & div {
+      margin: 0 auto;
+      display: inline-block;
+
+      &:not(:last-child) {
+         margin-bottom: 2rem;
+      }
+   }
+
+   &__logo {
+      width: 30rem;
+      overflow: hidden;
+
+      & img {
+         height: 100%;
+         width: 100%;
+      }
+   }
+
+   &__icon {
+      display: flex;
+
+      & svg:not(:last-child) {
+         margin-right: 2rem;
+      }
+      & svg {
+         height: 4rem;
+         width: 4rem;
+         fill: var(--white);
+         transition: all 0.2s;
+         cursor: pointer;
+      }
+      & svg:hover {
+         fill: var(--primary);
+      }
+   }
+
+   &__copywrite {
+      color: var(--white);
+      font-size: 1.5rem;
+   }
+}

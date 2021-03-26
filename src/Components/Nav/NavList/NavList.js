@@ -7,8 +7,8 @@ const navList = () => {
    return (
       <ul className={classes.NavList}>
          <NavItem link="/">Home</NavItem>
-         <NavItem link="/">Services</NavItem>
-         <NavItem link="/">Contact</NavItem>
+         <NavItem link="/">Clients</NavItem>
+         <NavItem link="/">Profile</NavItem>
          <NavItem link="/">
             <div className={classes.Sign}>
                <svg>
